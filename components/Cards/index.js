@@ -37,28 +37,16 @@ const cardCreator = (objectData) => {
     card.classList.add("card")
     header.classList.add("headline")
     author.classList.add("author")
-    byLine.classList.add("span")
     imageContainer.classList.add("img-container")
 
-    // objectData.forEach(element => {
-    //     let header = objectData.headline
-    //     let image = objectData.authorPhoto
-    //     let author = objectData.authorName
-    // })
-    // header.textContent = objectData.headline
-    // image.img = objectData.authorPhoto
-    // author.textContent = objectData.authorName
+
+
 
     header.textContent = objectData.headline
-    image.textContent = objectData.authorPhoto
+
     image.src = objectData.authorPhoto
-    author.textContent = objectData.authorName
-
-
-
-
-
-
+    console.log(objectData.authorPhoto)
+    byLine.textContent = objectData.authorName
 
     return card
 }
